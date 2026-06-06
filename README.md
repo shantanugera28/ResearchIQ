@@ -6,9 +6,7 @@ A domain-agnostic agentic research workflow that takes any query, autonomously c
 
 ---
 
-## Architecture
-
-<h2 align="center">System Architecture</h2>
+## System Architecture
 
 <p align="center">
   <img src="assets/architecture.jpg" width="550">
