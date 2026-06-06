@@ -8,7 +8,11 @@ A domain-agnostic agentic research workflow that takes any query, autonomously c
 
 ## Architecture
 
-![ResearchIQ Architecture](assets/architecture.jpg)
+<h2 align="center">System Architecture</h2>
+
+<p align="center">
+  <img src="assets/architecture.jpg" width="550">
+</p>
 
 
 ### Tools Called Autonomously
