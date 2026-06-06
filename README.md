@@ -13,6 +13,30 @@ A domain-agnostic agentic research workflow that takes any query, autonomously c
 </p>
 
 
+
+## Product Walkthrough
+
+### Landing Page
+
+![Landing Page](assets/screenshots/landing-page.png)
+
+### Agent Execution Trace
+
+![Pipeline Trace](assets/screenshots/pipeline-trace.png)
+
+### Structured Research Report
+
+#### Executive Summary & Findings
+
+![Research Report Part 1](assets/screenshots/final-report-1.png)
+
+#### Sources, Limitations & Future Directions
+
+![Research Report Part 2](assets/screenshots/final-report-2.png)
+
+
+
+
 ### Tools Called Autonomously
 | Node | Tool | Purpose |
 |------|------|---------|
