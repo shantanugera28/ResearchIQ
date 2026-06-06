@@ -36,6 +36,29 @@ A domain-agnostic agentic research workflow that takes any query, autonomously c
 
 
 
+## Key Features
+
+- Multi-source retrieval using Tavily Search and arXiv
+- LangGraph StateGraph orchestration
+- Structured outputs with PydanticAI
+- Groq-hosted Llama 3.3 reasoning
+- Interactive execution trace UI
+- Confidence scoring and source attribution
+- Fully free-tier AI stack
+
+
+## Why This Is Agentic
+
+Unlike a traditional chatbot that relies on a single LLM call, ResearchIQ executes a multi-step workflow:
+
+1. Retrieves recent web information using Tavily
+2. Retrieves academic literature from arXiv
+3. Synthesizes findings using Groq-hosted Llama 3.3
+4. Validates output against a strict Pydantic schema
+
+Each step updates a shared LangGraph state and passes information to subsequent nodes, creating an autonomous multi-tool workflow.
+
+
 
 ### Tools Called Autonomously
 | Node | Tool | Purpose |
@@ -153,7 +176,7 @@ Frontend runs at `http://localhost:3000`
 ## Project Structure
 
 ```
-research-agent/
+ResearchIQ/
 ├── backend/
 │   ├── agent.py          # LangGraph pipeline + PydanticAI
 │   ├── main.py           # FastAPI server
@@ -165,17 +188,6 @@ research-agent/
         ├── App.js        # React UI — pipeline trace, metrics, report
         └── App.css
 ```
-
----
-
-## Video Demo Outline (3–5 min)
-
-1. **Problem** (30s) — Manual research is slow; this agent covers web + academic sources autonomously in one query
-2. **Architecture** (90s) — Walk through the LangGraph StateGraph, explain each node and tool
-3. **Live Demo** (2 min) — Run a query live, show the 4-step pipeline animating with per-step timing, scroll through the structured report and metrics bar
-4. **Limitation + Next Step** (30s) — No streaming today; would add FastAPI SSE for real-time token output
-
----
 
 *Built by Shantanu Gera · VIT Chennai · B.Tech CSE 2026*
 *Stack: LangGraph · PydanticAI · Groq · Tavily · arXiv · FastAPI · React*
