@@ -8,23 +8,8 @@ A domain-agnostic agentic research workflow that takes any query, autonomously c
 
 ## Architecture
 
-```
-User Query
-    │
-    ▼
-┌──────────────────────────────────────────────────────────────┐
-│                      LangGraph Pipeline                      │
-│                                                              │
-│  [search_web] → [fetch_arxiv] → [synthesize] → [validate]   │
-│   (Tavily)       (arXiv API)    (Groq LLM)    (PydanticAI)  │
-└──────────────────────────────────────────────────────────────┘
-    │
-    ▼
-Structured ResearchReport (Pydantic Model)
-    │
-    ▼
-FastAPI → React Frontend
-```
+![ResearchIQ Architecture](assets/architecture.jpg)
+
 
 ### Tools Called Autonomously
 | Node | Tool | Purpose |
